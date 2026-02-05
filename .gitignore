@@ -1,0 +1,18 @@
+# GeoGebra source files (working files)
+*.ggb
+
+# Temporary conversion outputs
+geogebra_converted.asy
+ggb_convert.asy
+ggb_convert.png
+
+# LaTeX temp files
+texput.aux
+texput.log
+
+# Local test/debug files
+*_result*.png
+geogebra_thumbnail.png
+
+# Local scripts
+*.vbs
