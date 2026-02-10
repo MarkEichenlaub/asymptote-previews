@@ -1,0 +1,8 @@
+size(3cm);
+
+real eps = 1;
+draw(arc((0, 0), 1, -90 + eps, 90 - eps), Bars(5));
+
+int n = 14;
+for(real i = 0.5; i < n/2; ++i)
+	draw(1.4*dir(360/n*i - 90)--1.1*dir(360/n*i - 90), Arrow(TeXHead));

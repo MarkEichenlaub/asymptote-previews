@@ -1,0 +1,10 @@
+draw((0,0)--(1,0));
+draw((.2,0)--(.6,0)--(.6,.3)--(.2,.3)--cycle);
+draw((.4,.15)--(.4,-.1),arrow = Arrow(6),blue);
+label("$mg$",(.4,-.1),S,blue);
+draw((.6,.3)--(.9,.45),arrow = Arrow(6),red);
+label("$F_{\mathrm{pull}}$",(.9,.45),N,red);
+draw((.2,.1)--(0,.1),arrow = Arrow(6),green);
+label("$F_{\mathrm{friction}}$",(0,.1),W,green);
+draw((.45,0)--(.45,.4),arrow = Arrow(6),orange);
+label("$N$",(.45,.4),N,orange);

@@ -1,0 +1,58 @@
+unitsize(10mm);
+pen dp=black+1.5;
+pen dp2=black+3;
+pen dp3=black+1;
+dot((0,0),dp2);
+draw(circle((0,0),1));
+draw((0,2)--(0,0),dp);
+real deltay = -7;
+dot((0,0+deltay),dp2);
+draw(circle((0,0+deltay),1));
+draw((0,deltay)--(0,deltay-2),dp);
+draw((1,0)--(1,deltay));
+draw((-1,deltay+.09)--(0,0));
+real s = 1;
+draw((-s/2,deltay-2)--(s/2,deltay-2)--(s/2,deltay-s-2)--(-s/2, deltay-s-2)--cycle);
+label("$10\mathrm{~kg}$", (0,deltay-2-s/2));
+real deltax = -1;
+real s = 0.75;
+real deltay = s/2+.75;
+draw((-s/2+deltax,deltay-2)--(s/2+deltax,deltay-2)--(s/2+deltax,deltay-s-2)--(-s/2+deltax, deltay-s-2)--cycle);
+
+label("m", (deltax, deltay-2-s/2));
+draw((-1,0)--(-1,-deltay+s/3));
+real deltay = -7;
+
+dot((-0.289,-2), magenta);
+dot((-1,deltay), green);
+dot((1,deltay), blue);
+
+real delta = 5;
+
+unitsize(10mm);
+pen dp=black+1.5;
+pen dp2=black+3;
+pen dp3=black+1;
+dot((0+delta,0),dp2);
+draw(circle((0+delta,0),1));
+draw((0+delta,2)--(0+delta,0),dp);
+real deltay = -6.5;
+dot((0+delta,0+deltay),dp2);
+draw(circle((0+delta,0+deltay),1));
+draw((0+delta,deltay)--(0+delta,deltay-2),dp);
+draw((1+delta,0)--(1+delta,deltay));
+draw((-1+delta,deltay+.09)--(0+delta,0));
+real s = 1;
+draw((-s/2+delta,deltay-2)--(s/2+delta,deltay-2)--(s/2+delta,deltay-s-2)--(-s/2+delta, deltay-s-2)--cycle);
+label("$10\mathrm{~kg}$", (0+delta,deltay-2-s/2));
+real deltax = -1;
+real s = 0.75;
+
+dot((-0.308+delta,-2), magenta);
+dot((-Cos(114.6/2)+delta,deltay-Sin(114.6/2)), green);
+dot((1+delta,deltay+1), blue);
+
+real deltay = s/2-.25;
+draw((-s/2+deltax+delta,deltay-2)--(s/2+deltax+delta,deltay-2)--(s/2+deltax+delta,deltay-s-2)--(-s/2+deltax+delta, deltay-s-2)--cycle);
+label("m", (deltax+delta, deltay-2-s/2));
+draw((-1+delta,0)--(-1+delta,-deltay-1-s));

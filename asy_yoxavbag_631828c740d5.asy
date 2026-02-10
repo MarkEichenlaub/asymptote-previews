@@ -1,0 +1,12 @@
+dot((0.5, 0.133975));
+label("$s$", (0.22, 0.05), 2S+E, white+red);
+draw(circle((0,0), 0.1));
+draw((0,0)--(0,1));
+draw(circle((0.5, 0.133975), 0.1));
+draw(arc((0,1),1, 270,300), white+red, EndArrow);
+draw((0.5, 0.133975)--(0,1));
+draw((0,0)--(0.2,0), deepred, EndArrow);
+defaultpen(.5);
+label("$\mathrm{d}s$", (0,0), S, deepred);
+dot((0,0));
+dot((0,1));
