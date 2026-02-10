@@ -1,0 +1,18 @@
+unitsize(6cm);
+real theta = asin(.25)*180/pi;
+dot((0,0),10+black);
+draw((0,0)--dir(theta));
+draw((0,0)--dir(180-theta));
+draw((0,0)--.5*dir(theta), arrow = Arrow(6), red+linewidth(1.5pt));
+draw((0,0)--.5*dir(180-theta), arrow = Arrow(6), red+linewidth(1.5pt));
+label("$T$",.25*dir(theta),N,red);
+label("$T$",.25*dir(180-theta),N,red);
+draw((-1,0)--(1,0), dotted);
+draw(arc((0,0),.3,0,theta));
+draw(arc((0,0),.3,180,180-theta));
+label("$\theta$",dir(theta/2)*.36);
+label("$\theta$",dir(180-theta/2)*.36);
+draw((.5*Cos(theta),0)--.5*dir(theta),dotted+red);
+draw((-.5*Cos(theta),0)--.5*dir(180-theta),dotted+red);
+label("$T_y$",(.5*Cos(theta),.25*Sin(theta)), E, red);
+label("$T_y$",(-.5*Cos(theta),.25*Sin(theta)), W, red);

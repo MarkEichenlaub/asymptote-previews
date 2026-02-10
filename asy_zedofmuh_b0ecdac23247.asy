@@ -1,0 +1,10 @@
+unitsize(4cm);
+//fill((0,0)--(2,0)--(2,1)--cycle, paleblue);
+draw(box((0,0),(2,1)));
+draw((0,0)--(2,1), blue+linewidth(1.5pt));
+label("$F_{m \to S}$",(-.2,.5),W);
+label("$0$",(0,0),SW);
+label("$\Delta \ell$",(1,-.2),S);
+//label("$W_{m \to S}$",(1.5,.25),blue);
+label("$\Delta \ell_{\rm max}$",(2,0),S);
+label("$k \Delta \ell_{\rm max}$",(0,1),W);

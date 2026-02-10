@@ -1,0 +1,31 @@
+unitsize(5cm);
+
+path blob = shift(-.55,-.45)*((0,.1)..(.3,0)..(.5,0)..(1,.2)..(.9,.7)..(.5,1)..(.1,.3)..cycle);
+pair F = .5*dir((1,2));
+
+real t = times(blob, .3)[0];
+pair intercept = point(blob,t);
+pair rot = intercept + F/4;
+
+picture blobforce(pair F, real x){
+	picture p;
+
+	draw(p,blob);
+
+	real t = times(blob, x)[0];
+	pair intercept = point(blob,t);
+	draw(p,shift(intercept)*shift(-F)*((0,0)--F), arrow = Arrow(6), red+linewidth(2pt));
+
+	draw(p,rot--intercept, arrow = Arrow(6), deepgreen+linewidth(2pt));
+    label("$\vec{r}$",interp(rot,intercept,.5),NW,deepgreen);
+    label("$\vec{F}$",intercept - F/2,NW,red);
+    dot(p,rot,deepgreen);
+    return p;
+}
+
+real dx = 0;
+path line = -10*F -- 10*F;
+real x = intersectionpoint(blob,line).x;
+add(shift(dx,0)*blobforce(F,x) );
+label("shape doesn't rotate",(dx,-1));
+label("(C)",(dx,-1.3));

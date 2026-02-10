@@ -1,0 +1,12 @@
+unitsize(5cm);
+fill(box((0,0),(2,1)), lightgray);
+fill((0,1)--(2,1)--(2,0)--(2.2,0)--(2.2,1.2)--(0,1.2)--cycle, lightgray*1.07);
+draw(box((0,0),(2.2,1.2)));
+draw((2,0)--(2,1), dashed);
+draw((0,1)--(2,1), dashed);
+label("$m$",(1,0),S);
+label("$v$",(0,.5),W);
+label("$p$",(1,.5));
+label("$\Delta m$",(2.1,0),S);
+label("$\Delta v$",(0,1.1),W);
+label("$\Delta p$",(2.1,1.1));

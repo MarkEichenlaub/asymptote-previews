@@ -1,0 +1,10 @@
+unitsize(6cm);
+draw((0,0)--(1,0), linewidth(2pt));
+draw((.5,0)--(.5,-.25), deepgreen+linewidth(2pt));
+draw(shift(.5,-.25)*scale(.1)*unitcircle);
+draw((.4,-.25)--(.4,-.5));
+dot((.4,-.5),black+10);
+draw((.6,-.25)--(.6,-.5));
+dot((.6,-.5),black+10);
+label("$m$",(.4,-.56));
+label("$m$",(.6,-.56));

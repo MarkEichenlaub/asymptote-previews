@@ -1,0 +1,17 @@
+unitsize(5cm);
+real theta = 30;
+dot((0,0));
+pair pos = dir(-90+theta);
+draw((0,0)--pos, linewidth(2pt));
+draw((-1,0)--(1,0), brown+linewidth(2pt));
+draw((0,0)--(0,-1), dotted);
+//draw(arc((0,0),.3,-90,-90+theta));
+draw((0,pos.y)--pos, dotted);
+label("$d$",(pos.x/2,pos.y),S);
+draw((pos.x,-1)--pos, dotted);
+label("$y$",(pos.x,-.5+pos.y/2),E);
+label("$L$",pos/2,NE);
+int n = 10;
+for(int i =0; i<=n; ++i){
+dot(pos*i/n,red);
+}
