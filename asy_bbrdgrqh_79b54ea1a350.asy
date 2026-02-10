@@ -1,0 +1,17 @@
+draw(unitcircle);
+draw(shift(0,3)*unitcircle);
+draw((-1.1,-2)--(1.1,-2)--(1.1,1.5)--(-1.1,1.5)--cycle);
+draw((0,4)--(0,4.5));
+draw((-3,4.5)--(3,4.5),linewidth(2pt));
+draw(shift(0,-1.3)*scale(.15)*unitcircle);
+draw((.15,-2)--(.15,-1.3));
+draw((-.15,-1.3)--(-.15,-3));
+draw((0,3)--(sqrt(2)/2,3+sqrt(2)/2),arrow = Arrow(6),red);
+draw((0,0)--(0,1),arrow=Arrow(6),red);
+label("$5\,\mathrm{N}$",(sqrt(2)/2,3+sqrt(2)/2),NE);
+draw((0,-1)--(0,-1.15));
+dot((0,1.5));
+draw((0,1)--(0,1.5));
+draw((0,1.5)--(0,2));
+//draw((-.15,-3)--(-.15,-4),arrow = Arrow(6),blue+linewidth(2pt));
+//label("$10\,\mathrm{N}$",(-.15,-3.5),W,blue);

@@ -1,0 +1,11 @@
+unitsize(1cm);
+draw(scale(1.3)*unitcircle,dashed);
+fill(shift(0,1.3)*unitcircle, yellow);
+dot((0,0));
+label("c.o.m.",(0,0),S);
+fill(shift(0,-3)*scale(.3)*unitcircle,blue);
+draw((0,-3)--(5,-3),arrow=Arrow(6),red);
+label("$\vec{v}_{\mathrm{planet}}$",(3,-3),S);
+draw(scale(3)*unitcircle,dashed);
+draw((0,0)--(-6,0),arrow = Arrow(TeXHead), dashed+linewidth(.5));
+label("to Earth",(-5,0),S);

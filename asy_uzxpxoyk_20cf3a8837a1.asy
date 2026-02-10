@@ -1,0 +1,15 @@
+unitsize(2cm);
+draw(unitcircle);
+draw((0,0)--(1,0),dotted);
+label("$R$",(.5,0),S);
+draw((0,3)--(.4,3),dotted);
+label("$r$",(.2,3),S);
+label("Tidus",(0,0),S);
+draw(shift(0,3)*scale(.4)*unitcircle);
+label("Fundy",(0,3),N);
+label("astronaut",(0,2.6),SE);
+fill(box((-.05,2.6),(.05,2.5)));
+dot((0,0));
+dot((0,3));
+draw((0,0)--(0,3),dashed);
+label("$x$",(0,1.5),E);
