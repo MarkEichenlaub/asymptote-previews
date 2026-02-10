@@ -1,0 +1,10 @@
+dot((0,0));
+draw(scale(.3)*unitcircle);
+draw((1,-.3)--(1.6,-.3)--(1.6,.3)--(1,.3)--cycle);
+dot((1.3,0),red);
+draw((0,0)--(.5,0), arrow = Arrow(6),red);
+dot((0,-1.5));
+//draw(shift(0,-1.5)*scale(.3)*unitcircle);
+draw((1,-1.8)--(1.6,-1.8)--(1.6,-1.2)--(1,-1.2)--cycle);
+dot((1.3,-1.5),red);
+draw((0,-1.5)--(.5,-1.5), arrow = Arrow(6),red);
