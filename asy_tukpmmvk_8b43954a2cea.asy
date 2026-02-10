@@ -1,0 +1,1 @@
+unitsize(1cm); filldraw(xscale(.5)*rotate(180)*((0,1)--dir(210)--dir(330)--cycle),brown+linewidth(2pt));
