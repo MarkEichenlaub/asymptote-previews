@@ -1,5 +1,6 @@
-# GeoGebra source files (working files)
-*.ggb
+# GeoGebra test/working files (but track geogebra_*.ggb source backups)
+test_mirror.ggb
+normal.ggb
 
 # Temporary conversion outputs
 geogebra_converted.asy
