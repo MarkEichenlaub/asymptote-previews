@@ -1,0 +1,12 @@
+size(100);
+pair A = (0,0);
+pair B = (20,0);
+pair h = (10,20);
+pair b = (10,8);
+pair g = (10,0);
+draw(A--B);
+draw(g--h, yellow+dashed);
+pen thickPen = linewidth(2.0);
+filldraw(circle(b,1), orange);
+filldraw(circle(h,2), yellow);
+dot("ball shadow", g, S, gray);
