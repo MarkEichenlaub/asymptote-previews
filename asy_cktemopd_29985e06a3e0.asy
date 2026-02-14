@@ -1,0 +1,13 @@
+unitsize(6cm);
+  draw(unitsquare,gray);
+  draw((0,0)--(0.5,0.5));
+  draw((0.5,0.5)--(0.5,1));
+  draw((0.5,0.5)--(1,0.5));
+  arrow((1,0),dir(180),gray);
+  arrow((0,1),dir(270),gray);
+  label("$\beta \;\mathrm{(beta)}$",(-.1,.5),W);
+  label("$\alpha \;\mathrm{(alpha)}$",(.5,0),S);
+  label("$1$", (.7,0.2));
+  label("$2$", (.2,0.7));
+  label("$3$", (.7,0.7));
+  label("TASEP Phase Diagram", (0.5,1),N);
