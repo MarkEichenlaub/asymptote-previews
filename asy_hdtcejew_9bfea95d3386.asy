@@ -1,0 +1,10 @@
+unitsize(6mm);
+label("Rest Frame: Post Collision",(2.5,4));
+draw((-.5,2)--(1.5,2),BeginArrow);
+draw(circle((0,0),1),linewidth(1));
+label("$m$", (0,0));
+label("$2v$", (0,2.5));
+draw((4,2)--(6,2),EndArrow);
+draw(circle((5,0),1),linewidth(1));
+label("$m$", (5,0));
+label("$v$", (5,2.5));
