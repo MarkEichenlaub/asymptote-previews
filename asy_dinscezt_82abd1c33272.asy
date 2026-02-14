@@ -1,0 +1,7 @@
+unitsize(2cm);
+draw(scale(.2)*unitcircle);
+draw(shift(1,0)*scale(.1)*unitcircle);
+draw((.2,0)--(.9,0));
+label("$k$",(.5,0),N);
+label("$m_A$",(0,-.2),S);
+label("$m_B$",(1,-.2),S);
