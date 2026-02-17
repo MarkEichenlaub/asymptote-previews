@@ -1,0 +1,12 @@
+unitsize(3cm);
+dot((0,0));
+draw(unitcircle);
+draw(shift((1.1,0))*yscale(.8)*xscale(1.7)*unitcircle);
+label("orbit Q",(2.2,.8));
+label("orbit P",(-1,-.8));
+draw((-.6,0)--(-.6,.4),linewidth(2pt),arrow = Arrow(6));
+label("$v_a$",(-.6,.2),W);
+draw((2.8,0)--(2.8,-.4),linewidth(2pt),arrow = Arrow(6));
+label("$v_b$",(2.8,-.2),E);
+draw((0,1)--(.4,1),linewidth(2pt),arrow=Arrow(6));
+label("$v_c$",(.2,1),N);
