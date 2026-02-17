@@ -1,0 +1,13 @@
+size(10cm);
+draw((0,1)--(0,0)--(.5,0)--(.5,1));
+draw((0,.8)--(.1,.8));
+draw((.4,.8)--(.5,.8));
+draw((.1,.9)--(.1,.6)--(.4,.6)--(.4,.9)--cycle);
+//label("ice",(.25,.75));
+draw((.25, .75)--(.25,.5), arrow = Arrow(6), deepred);
+label("$F_{\rm gravity}$",(.25,.5),S, deepred);
+draw((.25,.8)--(.25,1.05), arrow = Arrow(6), deepred);
+label("$F_{\rm buoyant, water}$",(.25,1.05),N, deepred);
+//label("water",(.25,.3));
+draw((.35,.86)--(.35,.92), arrow = Arrow(6), deepred);
+label("$F_{\rm buoyant, air}$",(.4,.92),N, deepred);
