@@ -1,0 +1,17 @@
+size(300);
+pair A = (-20,0);
+pair B = (20,0);
+pair h = (20,20);
+pair b = (0,11);
+fill(box(A,h),0.8*lightgray);
+draw(A--B);
+filldraw(circle((0,4),.7));
+pen thickPen = linewidth(2.0);
+draw((0,4)--(0,0), thickPen);
+draw((0,4)--(-1,4), thickPen);
+draw(A--h, yellow+dashed);
+filldraw(circle(b,1), orange);
+dot("ball shadow",A, S,gray);
+draw((0,-.1)--(-10,-.1), dashed+blue+1.5pt);
+label("Susumu's shadow", (-5,-2),gray);
+draw((-10,-.1)--(20,14.9), yellow+dashed);

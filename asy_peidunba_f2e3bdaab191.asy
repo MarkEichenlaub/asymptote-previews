@@ -1,0 +1,10 @@
+unitsize(6mm);
+label("Center of Mass Ref. Frame: Post Collision",(2.5,4));
+draw((-.5,2)--(1.5,2),EndArrow);
+draw(circle((0,0),1),linewidth(1));
+label("$m$", (0,0));
+label("$3v/2$", (0,2.5));
+draw((4,2)--(6,2),BeginArrow);
+draw(circle((5,0),1),linewidth(1));
+label("$m$", (5,0));
+label("$3v/2$", (5,2.5));

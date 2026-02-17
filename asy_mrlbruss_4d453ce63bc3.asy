@@ -1,0 +1,10 @@
+unitsize(8cm);
+draw((0,1)--(0,0)--(.5,0)--(.5,1));
+draw((0,.8)--(.1,.8));
+draw((.4,.8)--(.5,.8));
+draw((.1,.9)--(.1,.6)--(.4,.6)--(.4,.9)--cycle);
+label("Ice cube A", (.25,1));
+draw(shift(.25,.75)*scale(.05)*unitcircle);
+label("air",(.25,.75));
+label("ice",(.25,.65));
+label("water",(.25,.4));

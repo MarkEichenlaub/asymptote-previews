@@ -1,0 +1,13 @@
+draw(unitcircle);
+dot((-1,-2));
+dot((1,-2));
+draw((-1,-2)--(-1,0));
+draw((1,-2)--(1,0));
+draw((0,0)--(0,2));
+fill(shift(0,2)*scale(.3)*polygon(4));
+fill(shift(-.3,2.15)*yscale(.1)*xscale(.15)*polygon(4));
+draw((-.1,1.8)--(-.1,2),white);
+draw((0,1.8)--(0,2),white);
+draw((.1,1.8)--(.1,2),white);
+label("$m_1$",(-1,-2),W);
+label("$m_2$",(1,-2),E);
