@@ -1,0 +1,29 @@
+size(15cm);
+defaultpen(fontsize(10pt));
+
+real sh = -1.4, eps = 0.1;
+
+void next(string L){
+	currentpicture = shift(sh, 0)*currentpicture;
+	xaxis(0, 1, Arrow(TeXHead));
+	yaxis(0, 1, Arrow(TeXHead));
+	label(L, (1/2, 1 + eps));
+label("$v$",(0,1),W);
+label("$t$",(1,0),S);
+
+}
+
+next("(a)");
+draw(graph(new real(real t){ return 0.7; }, 0, 1));
+
+next("(b)");
+draw(graph(new real(real t){ return 0.8 - t; }, 0, 0.8));
+
+next("(c)");
+draw(graph(new real(real t){ return t; }, 0, 1));
+
+next("(d)");
+draw(graph(new real(real t){ return 0.2*exp(1.7*t); }, 0, 1));
+
+next("(e)");
+draw(graph(new real(real t){ return 0.8 - .6*exp(-7*t); }, 0, 1));
